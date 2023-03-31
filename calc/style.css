@@ -1,0 +1,31 @@
+.calc{
+   border:1px solid #4A90E2;
+   width: min(50vw, 350px);
+   height:400px;
+   font-size: 4vmin;
+   background:#eee;
+ }
+ .calc__input{
+   width: min(50vw, 350px);
+   box-sizing: border-box;
+   height:20%;
+   text-align:right;
+   border-color:#4A90E2;
+   font-size:1em;
+ }
+ 
+ .btn{
+   border:1px solid #4A90E2;
+   width:65px;
+   text-align:center;
+   margin-right:0.3em;
+   margin-top:0.5em;
+   height: 35px;
+ }
+ .button{
+   display:flex;
+   justify-content:center;
+   flex-wrap: wrap;
+   height:65%;
+   
+ }
