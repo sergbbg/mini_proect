@@ -113,3 +113,33 @@ align-items: center;
 .line{
   text-decoration: line-through;
 }
+
+.hide {
+  display: none;
+}
+.MyToDoList_search{
+  height: 5em;
+  background-color: #555;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.searchengine{
+  width: 50%;
+  height: 40%;
+  padding-left: 45px;
+  position: relative;
+  font-size: 16px;
+  border-radius: 5px;
+box-shadow: 4px 3px 3px #666565;
+
+}
+.icon{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left:24%;
+  z-index: 1;
+}

@@ -6,7 +6,7 @@ function add3(){
   div.className = "list-item";
   var inputValue = document.getElementById("newList").value;
   if(inputValue != ""){
-   div.innerHTML = `${CheckBoxT}  ${inputValue} <span class="list-remove"> \u00D7 </span> `;  
+   div.innerHTML = `${CheckBoxT} <span class="text"> ${inputValue} </span>  <span class="list-remove"> \u00D7 </span> `;  
    ul.append(div);
     document.getElementById("newList").value = "";
   }
@@ -65,4 +65,42 @@ ult.addEventListener('click',  function(event){
 }
 )
 
+/// поисковик по задачам
+const searchengine = document.querySelector('#searchengine');
 
+
+searchengine.addEventListener('input', (e)=>{
+        const value = e.target.value.trim()
+        const searchengineItems = document.querySelectorAll('.list-item');
+        const searchRegExp = new RegExp(value, 'gi');
+
+                if (value === '') {
+                  searchengineItems .forEach((e) => {
+                      e.classList.remove('hide');
+                  })
+                  return;
+              };
+
+
+              
+              searchengineItems .forEach((e) => {
+                const innerCard = e.querySelector('.text');
+                const elementText = innerCard.textContent;
+                const isContainsSearchRequest = searchRegExp.test(elementText);
+                if (!isContainsSearchRequest) {
+                    e.classList.add('hide')
+                } else {
+                    e.classList.remove('hide')
+                }
+            })
+        })
+
+      //   const icon = document.querySelector(".icon");
+      //   searchengine.addEventListener("click", H(icon)); 
+      
+
+      // function H(icon){
+      //   icon.toggle("hide");
+      // }
+
+      
