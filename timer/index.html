@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title></title>
+   <body>
+    <main class="main" >
+        <section class="stopwatch">
+            <h2 class="stopwatch-header">Секундомер </h2>
+            <div id="time" class="time-second time">
+                <div class="block-time">  
+                <span class="digit" id="hr">
+                    00</span>
+                <span class="txt">Ч</span>
+                </div>
+                <div class="block-time">  
+                <span class="digit" id="min">
+                    00</span>
+                <span class="txt">М</span>
+                </div>
+                <div class="block-time">  
+                <span class="digit" id="sec">
+                    00</span>
+                <span class="txt">С</span>
+                    </div>
+                    <div class="block-time">   
+                <span class="digit" id="count">
+                    00</span>
+                </div>
+            </div>
+    
+            <div id="buttons" class="buttons">
+                <a href="#" class="start  start-sec">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Старт
+                </a>
+                <a href="#" class="stop stop-sec">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    стоп
+                </a>
+                <a href="#" class="reset reset-sec">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    сброс
+                </a>
+            </div>
+        </section>
+        <section class="timer">
+            <h2 class=" timer-head stopwatch-header">Таймер</h2>
+  
+            <div class="timer-input time">
+              <div> 
+              <input class="input-hour input-timer hr-timer digit"
+              type="text"
+              placeholder="00"  
+              maxlength="2"
+              > 
+              <span>Ч</span>
+          </div>
+              <div> 
+              <input class="input-min input-timer input-60 min-timer digit "
+              type="text"
+              placeholder="00"  
+              maxlength="2"
+              > 
+              <span>M</span>
+              </div>
+  
+              <div>  
+              <input class="input-second input-timer input-60 s-timer digit"
+              type="text"
+              placeholder="00"  
+              maxlength="2"
+              > 
+              <span>C</span>
+          </div>
+  
+  
+            </div>
+           
+            <div id="buttons" class="buttons">
+                <a href="#" class="start-timer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Старт
+                </a>
+                <a href="#" class="stop-timer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    стоп
+                </a>
+                <a href="#" class="reset reset-timer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    сброс
+                </a>
+              
+            </div>
+        </section>
+       </main>
+   </body>
+   
+  
+
+   <script  src="script.js">    </script>
+</body>
+</html>
