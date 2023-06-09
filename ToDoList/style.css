@@ -1,167 +1,167 @@
 body{
-margin: 0;
-padding: 0;
-color:#d9d9d9;
-background:#161616;
-font-family: 'Roboto', sans-serif;
-}
-
-.MyToDoList{
- display: flex;
- align-items: center;
- flex-direction: column;
-}
-
-#newList{
-  width: 80%;
-  padding: 12px;
-  border-radius: 5px;
-  box-shadow: 4px 3px 3px #666565;
-  font-size: 16px;
-}
-
-.addBtn{
-  padding: 10px;
-  background: #d9d9d9;
-  color: #555;
-  width: 15%;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-left: 2%;
-  border:none;
-  border-radius:5px;
-}
-
-
-
-.MyList li{
-  list-style: none;
-  font-size: 18px;
-}
-
-.header_MyToDoList{
-  width: 70%;
-}
-
-
-.MyList{
-  width: 70%;
+  margin: 0;
   padding: 0;
-  height: 350px;
-  overflow: auto;
-}
-.header-input{
-  display: flex;
-justify-content: space-between;
-}
-
-.list-remove{
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px 20px 12px 16px;
-font-size: 26px;
-}
-
-.list-item{
-  width: 98%;
-  position: relative;
+  color:#d9d9d9;
+  background:#161616;
+  font-family: 'Roboto', sans-serif;
+  }
   
-  background:#252525;
-  margin: 15px 0;
-  border-radius:7px;
-  cursor: pointer;
-  display: flex;
-align-items: center;
-}
-
-.MyDayRouteCalendar{
-  display: flex;
-  justify-content: space-around;
-  margin: 2.5vw 0;
-}
-.MyToDoList_header-motto{
-  font-weight: normal;
-  font-size: 28px;
-
-}
-
-
-.none{
-  display: none;
-}
-
-.checkBox {
-  padding: 0px;
-  cursor: pointer;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.checkBox-hover{
-  position: absolute;
-  visibility: hidden;
-}
-
-.visible{
-  visibility: visible;
-}
-.checkBox{
-  padding: 10px;
-}
-
-
-.line{
-  text-decoration: line-through;
-}
-
-.hide {
-  display: none;
-}
-.MyToDoList_search{
-  height: 5em;
-  background-color: #555;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .MyToDoList{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
   
-}
-.searchengine{
-  width: 50%;
-  height: 40%;
-  padding-left: 45px;
-  position: relative;
-  font-size: 16px;
-  border-radius: 5px;
-box-shadow: 4px 3px 3px #666565;
-
-}
-.icon{
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left:24%;
-  z-index: 1;
-}
-.MyToDoList__data_time{
-  font-size: 18px;
-  text-align: center;
-}
-
-.MyToDoList_header-text{
-  font-weight: normal;
-  text-align: center;
-  font-size: 38px;
-  padding-bottom: 20px;
-}
-
-.text-list-item{
-  width: 90%;
-  padding: 5px;
-}
+  #newList{
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 4px 3px 3px #666565;
+    font-size: 16px;
+  }
+  
+  .addBtn{
+    padding: 10px;
+    background: #d9d9d9;
+    color: #555;
+    width: 15%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 2%;
+    border:none;
+    border-radius:5px;
+  }
+  
+  
+  
+  .MyList li{
+    list-style: none;
+    font-size: 18px;
+  }
+  
+  .header_MyToDoList{
+    width: 70%;
+  }
+  
+  
+  .MyList{
+    width: 70%;
+    padding: 0;
+    height: 350px;
+    overflow: auto;
+  }
+  .header-input{
+    display: flex;
+  justify-content: space-between;
+  }
+  
+  .list-remove{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 20px 12px 16px;
+  font-size: 26px;
+  }
+  
+  .list-item{
+    width: 98%;
+    position: relative;
+    
+    background:#252525;
+    margin: 15px 0;
+    border-radius:7px;
+    cursor: pointer;
+    display: flex;
+  align-items: center;
+  }
+  
+  .MyDayRouteCalendar{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5vw 0;
+  }
+  .MyToDoList_header-motto{
+    font-weight: normal;
+    font-size: 28px;
+  
+  }
+  
+  
+  .none{
+    display: none;
+  }
+  
+  .checkBox {
+    padding: 0px;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkBox-hover{
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .visible{
+    visibility: visible;
+  }
+  .checkBox{
+    padding: 10px;
+  }
+  
+  
+  .line{
+    text-decoration: line-through;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .MyToDoList_search{
+    height: 5em;
+    background-color: #555;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .searchengine{
+    width: 50%;
+    height: 40%;
+    padding-left: 45px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 5px;
+  box-shadow: 4px 3px 3px #666565;
+  
+  }
+  .icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left:24%;
+    z-index: 1;
+  }
+  .MyToDoList__data_time{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .MyToDoList_header-text{
+    font-weight: normal;
+    text-align: center;
+    font-size: 38px;
+    padding-bottom: 20px;
+  }
+  
+  .text-list-item{
+    width: 90%;
+    padding: 5px;
+  }

@@ -12,7 +12,7 @@ function add3(){
    ul.append(div);
     document.getElementById("newList").value = "";
   }
-  console.log(div)
+  // console.log(div)
 }
 
 btn.addEventListener("click", add3);
@@ -72,28 +72,36 @@ const searchengine = document.querySelector('#searchengine');
 
 
 searchengine.addEventListener('input', (e)=>{
-        const value = e.target.value.trim()
+        // console.log("fff");
+        const value = e.target.value.trim();
+        // console.log(value);
         const searchengineItems = document.querySelectorAll('.list-item');
         const searchRegExp = new RegExp(value, 'gi');
-
+        console.log(searchRegExp);
                 if (value === '') {
-                  searchengineItems .forEach((e) => {
+                  searchengineItems.forEach((e) => {
                       e.classList.remove('hide');
                   })
                   return;
               };
 
-
+              searchengineItems.forEach((e) =>{
+                let text = e.textContent;
+                console.log(text);
+              })
               
-              searchengineItems .forEach((e) => {
-                const innerCard = e.querySelector('.text');
-                const elementText = innerCard.textContent;
-                const isContainsSearchRequest = searchRegExp.test(elementText);
-                if (!isContainsSearchRequest) {
-                    e.classList.add('hide')
-                } else {
-                    e.classList.remove('hide')
-                }
+           searchengineItems.forEach((e) => {
+
+             const innerCard = e.querySelector('.text-list-item');
+             const elementText = innerCard.textContent;
+                 console.log(elementText);
+                 const isContainsSearchRequest = searchRegExp.test(elementText);
+                 console.log(isContainsSearchRequest);
+                 if (!isContainsSearchRequest) {
+                     e.classList.add('hide')
+                 } else {
+                     e.classList.remove('hide')
+               }
             })
         })
 
@@ -104,5 +112,3 @@ searchengine.addEventListener('input', (e)=>{
       // function H(icon){
       //   icon.toggle("hide");
       // }
-
-      
