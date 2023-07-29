@@ -11,7 +11,7 @@ function startSec() {
   timerSec= true;
   stopWatch();
   startBtnSec.removeEventListener('click', startSec)
-  console.log("start");
+  
 }
 startBtnSec.addEventListener('click', startSec);
  
